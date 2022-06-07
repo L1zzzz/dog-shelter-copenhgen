@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: #B78D7F ;
+}
+
+h3{
+    text-align: center;
+    color: #B78D7F ;
+}
+
+h4{
+    text-align: center;
+    color: #B78D7F ;
+}
+
+h2{
+    margin-top: 25%;
+    color: #B78D7F ;
+}
+
+div{
+    background: #FFF9F2;
+    border-color: #B78D7F;
+    border-width: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
