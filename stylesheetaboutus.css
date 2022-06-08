@@ -33,6 +33,7 @@ nav{
 
   h1{
     padding-top: 100px;
+    font-family: 'Baloo Thambi 2';
   }
   
   .logo{
@@ -161,69 +162,35 @@ nav{
     #menu-button {
       display: none;
     }
-
-   
-    .video-background{
-        display: grid;
-    }
-
-    .photo-background{
-        display: none;
-    }
   
-  
-  
-    .course-section {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
     
-      margin-bottom: 80px;
-    }
-  
-  
-  
-    .course-section > img {
-      grid-row: auto;
-    }
     
   }
-
-/* mobile only styles */
-
-  @media screen and (max-width: 768px) {
-
- .video-background{
-     display: none;
-  }
-    
-    
-    
-    }
-
-
-
-
 
 
 h1{
     text-align: center;
     color: #B78D7F ;
     border-top: 2em;
+    font-family: 'Baloo Thambi 2';
 }
 
 h3{
     text-align: center;
     color: #B78D7F ;
+    font-family: 'Baloo Thambi 2';
 }
 
 h4{
     text-align: center;
     color: #B78D7F ;
+    font-family: 'Baloo Thambi 2';
 }
 
 h2{
     margin-top: 25%;
     color: #B78D7F ;
+    font-family: 'Baloo Thambi 2';
 }
 
  .photos, .put, .pull{
@@ -245,15 +212,10 @@ h2{
   }
   
 
-  @media only screen and (min-width: 750px){
-  .photos {
-    display: grid;
-    grid-template-columns: 50% auto;
-}
-  }
+ 
 
  
-@media only screen and (min-width: 920px){
+@media only screen and (min-width: 750px){
     
 .dogs{
   display: flex;
