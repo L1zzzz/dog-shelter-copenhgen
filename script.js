@@ -14,3 +14,5 @@ function buttonCrossing(x) {
   function addtext2(){
     document.getElementById('int_text').classList.toggle('hidden');
   }
+
+  // JS by Petr;

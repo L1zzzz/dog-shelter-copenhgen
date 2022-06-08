@@ -1,9 +1,9 @@
 :root {
-
+/* setting up colours */
     --color-primary: #8c8070;
     --color-background: #ffffff;
     --color-accent: #3f402e;
-    --color-header: #f5b328;
+    --color-header: #f4926c;
   }
   
 * {
@@ -19,7 +19,7 @@ nav{
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 550;
+    z-index: 99;
     padding: 20px 20px;    
     display: flex;
     justify-content: space-between;
@@ -63,10 +63,7 @@ nav{
   
   #myDropdown.open {
     transform: translateY(0%);
-  }
-  
-  
-  
+  }  
   #myDropdown a {
     color: #353535;
     padding: 33px;
@@ -80,9 +77,6 @@ nav{
     top: 100px;
     font-weight: bold;
 } 
-  .logo{
-      width: 100%;   
-  }
   .nav-link {
     color: black;
     text-decoration: none;
@@ -133,8 +127,8 @@ body {
     }
 }
 #contacts {
-    background-color white
-    width: auto;
+    background-color: white;
+    margin: auto;   
 }
 img {
     display: block;
@@ -150,6 +144,7 @@ h3 {
 }
 h4 {
     text-align: center;
+    font-weight: bolder;
 }
 #mail{
     text-align: center;
@@ -172,7 +167,4 @@ h5 {
     #menu-button {
         display: none;
     }
-}
-
-@media screen and (max-width: 1023px) {    
 }
