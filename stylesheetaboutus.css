@@ -3,7 +3,7 @@
     --color-primary: #8c8070;
     --color-background: #ffffff;
     --color-accent: #3f402e;
-    --color-header: #ffffff;
+    --color-header: #f5b328;
   
     --header-height: 90px;
   }
@@ -122,6 +122,86 @@ nav{
     font-size: 45px;
   }
 
+  #menu-button {
+    font-size: 16px;
+    background-color: transparent;
+    width: 100px;
+    border: none;
+    position: relative;
+  }
+  
+  #menu-button > span {
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color:#353535;
+    transition: 0.4s;
+  }
+
+  @media screen and (min-width: 768px) {
+    .photo-background{
+      display: none;
+    }
+  }
+
+/* desktop only styles */
+@media screen and (min-width: 1024px) {
+    .menu-desktop {
+        grid-auto-flow: column;
+        column-gap: 120px;
+      display: grid;
+    }
+
+    .see-all {
+      font-size: 2rem;
+      display: grid;
+      justify-items: end;
+  }
+  
+    #menu-button {
+      display: none;
+    }
+
+   
+    .video-background{
+        display: grid;
+    }
+
+    .photo-background{
+        display: none;
+    }
+  
+  
+  
+    .course-section {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    
+      margin-bottom: 80px;
+    }
+  
+  
+  
+    .course-section > img {
+      grid-row: auto;
+    }
+    
+  }
+
+/* mobile only styles */
+
+  @media screen and (max-width: 768px) {
+
+ .video-background{
+     display: none;
+  }
+    
+    
+    
+    }
+
+
+
 
 
 
@@ -146,7 +226,7 @@ h2{
     color: #B78D7F ;
 }
 
-div{
+ .photos, .put, .pull{
     background: #FFF9F2;
     border-color: #B78D7F;
     border-width: 2em;
@@ -165,49 +245,26 @@ div{
   }
   
 
+  @media only screen and (min-width: 750px){
+  .photos {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+  }
 
-  @media only screen and (min-width: 780px){
-
-    .flex-child1, .flex-child2, .flex-child3, .flex-child4, .flex0, .flex {
-        display: grid;
-        grid-template-columns: 50% auto;
-    }
-}    
-
+ 
 @media only screen and (min-width: 920px){
     
-
-    .flex-child1{
-        display: table-row;
-        width: 45%;
-        display: table-cell;
-    }
-
-    .flex-child2{
-        display: table-cell;
-        width: 45%;
-    }
-    
-    .flex-child3 {
-        display: table-row;
-        width: 45%;
-        display: table-cell;
-    }
-
-    .flex-child4  {
-        display: table-cell;
-        width: 45%;
-    }
-
-    .flex0{
-        width: 45%;
-        display: table-column;
-    }
-
-    .flex{
-        width: 45%;
-        display: table-cell;
-    }
-     
-  
+.dogs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.photos{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
 }
