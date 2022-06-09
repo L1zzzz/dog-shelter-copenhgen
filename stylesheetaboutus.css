@@ -3,7 +3,7 @@
     --color-primary: #8c8070;
     --color-background: #ffffff;
     --color-accent: #3f402e;
-    --color-header: #f5b328;
+    --color-header: #f4926c;
   
     --header-height: 90px;
   }
@@ -211,8 +211,6 @@ h2{
     width: 50%;
   }
   
-
- 
 
  
 @media only screen and (min-width: 750px){
