@@ -7,6 +7,7 @@
   --header-height: 90px;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Baloo Thambi 2', sans-serif;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 nav {
@@ -64,7 +65,7 @@ nav {
 
 .text {
   display: grid;
-  justify-content: center;
+  justify-content: left;
   font-size: 5.1rem;
   font-weight: 300;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
@@ -73,7 +74,7 @@ nav {
 
 .undertext {
   display: grid;
-  justify-content: center;
+  justify-content: left;
   font-size: 1.4rem;
   font-weight: 300;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
@@ -192,7 +193,7 @@ nav {
   display: inline-block;
   cursor: pointer;
   color: #000;
-  font-family: 'Baloo Thambi 2', sans-serif;
+  font-family: Arial;
   font-size: 23px;
   padding: 16px 31px;
   text-decoration: none;
@@ -215,14 +216,22 @@ nav {
 }
 
 .section3 {
-  background: #f4926c;
+  /* background: rgb(255, 255, 255); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .section4 {
   /* background: rgb(255, 255, 255); */
-  background: linear-gradient(180deg, rgba(244,146,108,1) 0%, rgba(245,178,56,1) 50%, rgba(244,146,108,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
-
 
 .styled:hover {
   background-color: rgb(121, 22, 227);
@@ -359,34 +368,11 @@ nav {
   height: auto;
 }
 
-
-footer{
-  position: inherit;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #f4926c;
-  height: auto;
-  width: 100vw;
-  padding-top: -140px;
-  color: #fff;
-}
-
-.footer-links{ 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
   .photo-background {
     display: none;
   }
 }
-
-
 
 /* desktop only styles */
 @media screen and (min-width: 1024px) {
@@ -418,8 +404,6 @@ footer{
   }
 }
 
-
-
 /* mobile only styles */
 
 @media screen and (max-width: 768px) {
@@ -431,4 +415,3 @@ footer{
     justify-content: left;
   }
 }
-
