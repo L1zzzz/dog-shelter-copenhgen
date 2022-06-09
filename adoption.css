@@ -1,8 +1,8 @@
-/* code from Petr */
+/* code from Petr (slightly edited)*/
 
 :root {
     --color-primary: #8c8070;
-    --color-background: #ffffff;
+    --color-background: #FFF9F2;
     --color-accent: #3f402e;
     --color-header: #f4926c;
     --header-height: 90px;
@@ -14,16 +14,13 @@
     box-sizing: border-box; 
 }
 
-body {
-    font-family: 'Baloo Thambi 2', cursive;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Baloo Thambi 2', cursive;
+    background-color: var(--color-background);
 }
 
 nav{
@@ -39,10 +36,6 @@ nav{
     align-items: center;
     
     background-color: var(--color-header);
-}
-
-h1{
-    top: 100px;
 }
   
 .logo{
@@ -165,24 +158,95 @@ h1{
   }
 
 
-  @media screen and (min-width: 1024px) {
-    .menu-desktop {
-        grid-auto-flow: column;
-        column-gap: 120px;
-      display: grid;
-    }
+/* code from Petr ends here, mine is from now on... */
 
-    .see-all {
-      font-size: 2rem;
-      display: grid;
-      justify-items: end;
-  }
-  
-    #menu-button {
-      display: none;
-    }
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h5 {
+  margin-top: 120px;
+  font-size: 2em;
+  text-align: center;
+  color: #7C321B;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+p {
+  margin-top: 0.5em;
+}
+
+.dog-image {
+  width: 100%;
+  margin-top: 1em;
 }
 
 
-/* code from Petr ends here, mine is from now on... */
+@media (min-width:700px) {
 
+  .dog-image {
+    object-fit: cover;
+    margin-top: 2em;
+  }
+
+  .dogs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-bottom: 3em;
+  }
+
+  .dog-image {
+    margin-top: 0.5em;
+  }
+}
+
+
+/* the next media is from Petr */
+
+@media screen and (min-width: 1024px) {
+  .menu-desktop {
+      grid-auto-flow: column;
+      column-gap: 120px;
+    display: grid;
+  }
+
+  .see-all {
+    font-size: 2rem;
+    display: grid;
+    justify-items: end;
+}
+
+  #menu-button {
+    display: none;
+  }
+}
+
+
+@media (min-width:1100px) {
+
+  .dog-image {
+    object-fit: cover;
+    margin-top: 2em;
+  }
+
+  .dogs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    margin-bottom: 3em;
+  }
+
+  .dog-image {
+    margin-top: 0.5em;
+  }
+}
